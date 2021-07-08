@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="counter.css">
+</head>
+<body >
+	<div class="conatiner md-6">
+    <div id="main">
+	<h1  id="header"class="text-center ">Live Counter</h1> 
+	<textarea id="text" cols="30" rows="5" placeholder="Write Your Text here"  onkeyup="countLetters() ; countWords();"></textarea>
+	<h3 id="header" class="text-center">Total Character: <span class='count'>0</span></h3>
+	<h3 id="header" class="text-center">Total Word: <span class='count2'>0</span></h3>
+	<!--<button class="btn btn-outline-danger" onclick="wpm()">Typing speed</button>
+	<h5>WPM:<span class="wpm">0</span></h5>>
+	-->
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+	  let textarea=document.querySelector("textarea");
+	  let charCount=document.querySelector(".count");
+	  let wordCount=document.querySelector(".count2");
+	  //let wpm=document.querySelector(".wpm");
+
+	  function countLetters(){
+	   let textLength=textarea.value.length; 
+		charCount.innerText=`${textLength}`;
+	  }
+	  function countWords(){
+	   let word=textarea.value.trim().split(/\s+/).length;//.split(" ") this method count every whitespace...so if we give two whitespace between two word ,,,it will count three word there ..
+		wordCount.innerText=`${word}`  
+	  }
+	//   function wpm(){
+	// 	  word
+	//   }
+	  
+	</script>
+</body>
+</html>

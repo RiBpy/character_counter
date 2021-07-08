@@ -1,0 +1,37 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(200deg, #FFD9E8 0%, #FFD9E8 50%, #DE95BA calc(50% + 1px), #DE95BA 60%, #7F4A88 calc(60% + 1px), #7F4A88 75%, #4A266A calc(75% + 1px), #4A266A 100%), linear-gradient(113deg, #FFD9E8 0%, #FFD9E8 40%, #DE95BA calc(40% + 1px), #DE95BA 50%, #7F4A88 calc(50% + 1px), #7F4A88 70%, #4A266A calc(70% + 1px), #4A266A 100%);
+	background-blend-mode: overlay, overlay, normal;
+    background-blend-mode: soft-light, screen, overlay, overlay, difference, overlay, normal;
+    min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#main{
+	width:550px;
+	display:flex;
+	flex-direction:column;
+	position:center;
+	background: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(200deg, #FFD9E8 0%, #FFD9E8 50%, #DE95BA calc(50% + 1px), #DE95BA 60%, #7F4A88 calc(60% + 1px), #7F4A88 75%, #4A266A calc(75% + 1px), #4A266A 100%), linear-gradient(113deg, #FFD9E8 0%, #FFD9E8 40%, #DE95BA calc(40% + 1px), #DE95BA 50%, #7F4A88 calc(50% + 1px), #7F4A88 70%, #4A266A calc(70% + 1px), #4A266A 100%);
+	background-blend-mode: overlay, overlay, normal;
+	background-blend-mode: overlay, screen, overlay, hard-light, overlay, normal;
+	padding:20px 40px;
+	box-shadow:0 5px 15px rgba(0,0,0,.5);
+	border-radius:0px 40px 0px 40px;
+}
+#text{
+	padding:20px;
+	border-radius:0px 40px 0px 40px;
+}
+#header{
+	color: #7F4A88 ;
+	font-size:2em;
+}
+.count,.count2{
+	color:red;
+}
